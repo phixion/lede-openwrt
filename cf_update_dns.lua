@@ -1,6 +1,4 @@
 #!/usr/bin/lua
--- Original script: https://github.com/nileshgr/utilities/blob/master/general/updateip.lua
--- http://nileshgr.com/2015/09/23/cloudflare-dynamic-dns-using-openwrt
 
 -- For use with openwrt since openwrt supports LUA.
 -- Prerequisites:
@@ -9,9 +7,8 @@
 -- luasocket
 -- libubus-lua
 -- json4lua
+-- edit /etc/hotplug.d/iface/99-dyndns.sh
 
--- I have a PPPoE connection so I just drop this script in /etc/ppp/ip-up.d
--- You can run via crontab or put it in interface hotplug :)
 
 update_records = {"CHANGE_ME"}
 domain_name = "CHANGE_ME"
